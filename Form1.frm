@@ -3,13 +3,339 @@ Object = "{962F707C-C66B-11D6-AFC5-0050BACCDC45}#1.0#0"; "PISO813X.ocx"
 Begin VB.Form Form1 
    BackColor       =   &H00808000&
    Caption         =   "AD Demo , Ads_Float()"
-   ClientHeight    =   5700
+   ClientHeight    =   7665
    ClientLeft      =   1530
    ClientTop       =   2160
    ClientWidth     =   8355
    LinkTopic       =   "Form1"
-   ScaleHeight     =   5700
+   ScaleHeight     =   7665
    ScaleWidth      =   8355
+   Begin VB.Frame Frame4 
+      BackColor       =   &H00FF8080&
+      Caption         =   "Channel"
+      Height          =   2295
+      Left            =   120
+      TabIndex        =   26
+      Top             =   5160
+      Width           =   6135
+      Begin VB.CheckBox Check1 
+         Caption         =   "0"
+         Height          =   255
+         Index           =   0
+         Left            =   360
+         TabIndex        =   59
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "1"
+         Height          =   255
+         Index           =   1
+         Left            =   1080
+         TabIndex        =   58
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "2"
+         Height          =   255
+         Index           =   2
+         Left            =   1800
+         TabIndex        =   57
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "3"
+         Height          =   255
+         Index           =   3
+         Left            =   2520
+         TabIndex        =   56
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "4"
+         Height          =   255
+         Index           =   4
+         Left            =   3240
+         TabIndex        =   55
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "5"
+         Height          =   255
+         Index           =   5
+         Left            =   3960
+         TabIndex        =   54
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "6"
+         Height          =   255
+         Index           =   6
+         Left            =   4680
+         TabIndex        =   53
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "7"
+         Height          =   255
+         Index           =   7
+         Left            =   5400
+         TabIndex        =   52
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "8"
+         Height          =   255
+         Index           =   8
+         Left            =   360
+         TabIndex        =   51
+         Top             =   720
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "9"
+         Height          =   255
+         Index           =   9
+         Left            =   1080
+         TabIndex        =   50
+         Top             =   720
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "10"
+         Height          =   255
+         Index           =   10
+         Left            =   1800
+         TabIndex        =   49
+         Top             =   720
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "11"
+         Height          =   255
+         Index           =   11
+         Left            =   2520
+         TabIndex        =   48
+         Top             =   720
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "12"
+         Height          =   255
+         Index           =   12
+         Left            =   3240
+         TabIndex        =   47
+         Top             =   720
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "19"
+         Height          =   255
+         Index           =   19
+         Left            =   2520
+         TabIndex        =   46
+         Top             =   1080
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "18"
+         Height          =   255
+         Index           =   18
+         Left            =   1800
+         TabIndex        =   45
+         Top             =   1080
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "17"
+         Height          =   255
+         Index           =   17
+         Left            =   1080
+         TabIndex        =   44
+         Top             =   1080
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "31"
+         Height          =   255
+         Index           =   31
+         Left            =   5400
+         TabIndex        =   43
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "30"
+         Height          =   255
+         Index           =   30
+         Left            =   4680
+         TabIndex        =   42
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "29"
+         Height          =   255
+         Index           =   29
+         Left            =   3960
+         TabIndex        =   41
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "28"
+         Height          =   255
+         Index           =   28
+         Left            =   3240
+         TabIndex        =   40
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "27"
+         Height          =   255
+         Index           =   27
+         Left            =   2520
+         TabIndex        =   39
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "26"
+         Height          =   255
+         Index           =   26
+         Left            =   1800
+         TabIndex        =   38
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "25"
+         Height          =   255
+         Index           =   25
+         Left            =   1080
+         TabIndex        =   37
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "24"
+         Height          =   255
+         Index           =   24
+         Left            =   360
+         TabIndex        =   36
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "23"
+         Height          =   255
+         Index           =   23
+         Left            =   5400
+         TabIndex        =   35
+         Top             =   1080
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "22"
+         Height          =   255
+         Index           =   22
+         Left            =   4680
+         TabIndex        =   34
+         Top             =   1080
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "21"
+         Height          =   255
+         Index           =   21
+         Left            =   3960
+         TabIndex        =   33
+         Top             =   1080
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "15"
+         Height          =   255
+         Index           =   15
+         Left            =   5400
+         TabIndex        =   32
+         Top             =   720
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "14"
+         Height          =   255
+         Index           =   14
+         Left            =   4680
+         TabIndex        =   31
+         Top             =   720
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "13"
+         Height          =   255
+         Index           =   13
+         Left            =   3960
+         TabIndex        =   30
+         Top             =   720
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "20"
+         Height          =   255
+         Index           =   20
+         Left            =   3240
+         TabIndex        =   29
+         Top             =   1080
+         Width           =   495
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "16"
+         Height          =   255
+         Index           =   16
+         Left            =   360
+         TabIndex        =   28
+         Top             =   1080
+         Width           =   495
+      End
+      Begin VB.TextBox tbChannelItv 
+         Alignment       =   1  'Right Justify
+         BackColor       =   &H00C0FFFF&
+         Height          =   288
+         Left            =   1920
+         TabIndex        =   27
+         Text            =   "10"
+         Top             =   1840
+         Width           =   1092
+      End
+      Begin VB.Label Label7 
+         BackColor       =   &H00FF8080&
+         Caption         =   "Channel Interval:"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Left            =   360
+         TabIndex        =   60
+         Top             =   1920
+         Width           =   1575
+      End
+   End
    Begin VB.Timer Timer2 
       Enabled         =   0   'False
       Interval        =   1000
@@ -19,7 +345,7 @@ Begin VB.Form Form1
    Begin PISO813XLib.PISO813X PISO813X1 
       Height          =   375
       Left            =   480
-      TabIndex        =   23
+      TabIndex        =   21
       Top             =   1680
       Visible         =   0   'False
       Width           =   375
@@ -30,8 +356,8 @@ Begin VB.Form Form1
    End
    Begin VB.Frame Frame3 
       BackColor       =   &H00FF8080&
-      Caption         =   "Frame3"
-      Height          =   2415
+      Caption         =   "Misc Settings"
+      Height          =   1935
       Left            =   3240
       TabIndex        =   16
       Top             =   3120
@@ -41,9 +367,9 @@ Begin VB.Form Form1
          BackColor       =   &H00C0FFFF&
          Height          =   288
          Left            =   1440
-         TabIndex        =   27
+         TabIndex        =   25
          Text            =   "180"
-         Top             =   1440
+         Top             =   1040
          Width           =   1092
       End
       Begin VB.TextBox dataFile 
@@ -51,30 +377,10 @@ Begin VB.Form Form1
          BackColor       =   &H00C0FFFF&
          Height          =   288
          Left            =   1440
-         TabIndex        =   25
+         TabIndex        =   23
          Text            =   "D:\my.xls"
-         Top             =   1800
+         Top             =   1440
          Width           =   1092
-      End
-      Begin VB.ComboBox cbADChNo 
-         BackColor       =   &H00C0FFC0&
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   300
-         ItemData        =   "Form1.frx":0000
-         Left            =   1440
-         List            =   "Form1.frx":0064
-         Style           =   2  'Dropdown List
-         TabIndex        =   22
-         Top             =   600
-         Width           =   1308
       End
       Begin VB.TextBox eAD 
          Alignment       =   1  'Right Justify
@@ -83,7 +389,7 @@ Begin VB.Form Form1
          Height          =   288
          Left            =   1440
          TabIndex        =   18
-         Top             =   1000
+         Top             =   680
          Width           =   1092
       End
       Begin VB.ComboBox InRange 
@@ -98,9 +404,9 @@ Begin VB.Form Form1
             Strikethrough   =   0   'False
          EndProperty
          Height          =   300
-         ItemData        =   "Form1.frx":00DE
+         ItemData        =   "Form1.frx":0000
          Left            =   1440
-         List            =   "Form1.frx":00E0
+         List            =   "Form1.frx":0002
          Style           =   2  'Dropdown List
          TabIndex        =   17
          Top             =   240
@@ -121,8 +427,8 @@ Begin VB.Form Form1
          ForeColor       =   &H00FFFFFF&
          Height          =   255
          Left            =   120
-         TabIndex        =   26
-         Top             =   1440
+         TabIndex        =   24
+         Top             =   1080
          Width           =   1095
       End
       Begin VB.Label Label2 
@@ -143,8 +449,8 @@ Begin VB.Form Form1
          Height          =   240
          Index           =   0
          Left            =   120
-         TabIndex        =   24
-         Top             =   1800
+         TabIndex        =   22
+         Top             =   1440
          Width           =   870
       End
       Begin VB.Label Label4 
@@ -160,11 +466,11 @@ Begin VB.Form Form1
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00FFFFFF&
-         Height          =   252
+         Height          =   255
          Left            =   120
-         TabIndex        =   21
-         Top             =   1000
-         Width           =   972
+         TabIndex        =   20
+         Top             =   720
+         Width           =   975
       End
       Begin VB.Label Label2 
          Appearance      =   0  'Flat
@@ -184,37 +490,15 @@ Begin VB.Form Form1
          Height          =   228
          Index           =   3
          Left            =   120
-         TabIndex        =   20
+         TabIndex        =   19
          Top             =   240
          Width           =   1056
-      End
-      Begin VB.Label Label2 
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H00FF8080&
-         Caption         =   "Channel (0-31)"
-         BeginProperty Font 
-            Name            =   "MS Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FFFFFF&
-         Height          =   240
-         Index           =   4
-         Left            =   120
-         TabIndex        =   19
-         Top             =   600
-         Width           =   1224
       End
    End
    Begin VB.Frame Frame1 
       BackColor       =   &H00FFC0FF&
       Caption         =   " Hardware Setting "
-      Height          =   2415
+      Height          =   1935
       Left            =   120
       TabIndex        =   6
       Top             =   3120
@@ -250,9 +534,9 @@ Begin VB.Form Form1
       Begin VB.ComboBox cbBiUni 
          BackColor       =   &H00C0FFC0&
          Height          =   288
-         ItemData        =   "Form1.frx":00E2
+         ItemData        =   "Form1.frx":0004
          Left            =   1560
-         List            =   "Form1.frx":00EC
+         List            =   "Form1.frx":000E
          Style           =   2  'Dropdown List
          TabIndex        =   8
          Top             =   1440
@@ -261,9 +545,9 @@ Begin VB.Form Form1
       Begin VB.ComboBox cbJmp20v 
          BackColor       =   &H00C0FFC0&
          Height          =   288
-         ItemData        =   "Form1.frx":0109
+         ItemData        =   "Form1.frx":002B
          Left            =   1560
-         List            =   "Form1.frx":0113
+         List            =   "Form1.frx":0035
          Style           =   2  'Dropdown List
          TabIndex        =   7
          Top             =   1080
@@ -438,14 +722,19 @@ Dim xlsApp As Excel.Application
 Dim xlsWorkbook As Excel.Workbook
 Dim xlsSheet As Excel.Worksheet
 
-Dim TimeInterval As Long
-Dim TimePassed As Long
+Dim TotalTimeInterval As Long
+Dim TotalTimePassed As Long
+Dim ChannelTimeInterval As Long
+Dim ChannelTimePassed As Long
+Dim TotalChannelChkdNo As Integer
+Dim CurrentChannelIndex As Integer
+
 Dim iColIndex As Integer
 
 Dim wInitialCode As Integer
 Dim YS(0 To 1) As Single
 
-Dim wCfgCode, wADChNo As Integer
+Dim wCfgCode As Integer
 Dim wBiUni, wJmp20v As Integer
 Dim dwCount As Long
 Dim bProcessing As Boolean
@@ -515,31 +804,41 @@ MsgBox "Error Code: " + Str(lErrorCode) + Chr(13) _
 End Sub
 
 Private Sub Timer2_Timer()
-    Dim i, iRtn As Integer
-    Dim fVal As Single
-    
-    If TimePassed < TimeInterval Then
-        TimePassed = TimePassed + Timer2.Interval
-        'MsgBox "Now Time is: " + CStr(TimeInterval)
-        Exit Sub
-    Else
-        'MsgBox "Now Record Into Excel"
-        TimePassed = 1000
-    End If
-    
+    Dim i, j As Integer
+
     If bProcessing = True Then
         Exit Sub
     Else
         bProcessing = True
     End If
-
-    fVal = PISO813X1.AnalogIn(wJmp20v, wBiUni)
-    'fVal = 12.56
     
-    If Dir(dataFile.Text) <> "" Then
-        RecordIntoXls fVal
+    If CurrentChannelIndex <= TotalChannelChkdNo Then
+        If ChannelTimePassed < ChannelTimeInterval Then
+            ChannelTimePassed = ChannelTimePassed + Timer2.Interval
+        Else
+            ChannelTimePassed = Timer2.Interval
+            
+            j = 0
+            For i = 0 To 31
+                If Check1(i).Value = 1 Then
+                    j = j + 1
+                End If
+                If j = CurrentChannelIndex Then
+                    Exit For
+                End If
+            Next i
+            
+            RecordChannel i
+            CurrentChannelIndex = CurrentChannelIndex + 1
+        End If
+    End If
+    
+    If TotalTimePassed < TotalTimeInterval Then
+        TotalTimePassed = TotalTimePassed + Timer2.Interval
     Else
-        MsgBox "File: " + dataFile.Text + " does not exist!"
+        TotalTimePassed = Timer2.Interval
+        CurrentChannelIndex = 1
+        ChannelTimePassed = ChannelTimeInterval
     End If
     
     bProcessing = False
@@ -572,6 +871,7 @@ End Sub
 
 Private Sub Command2_Click()
     Dim wRetVal As Integer
+    Dim i As Integer
 
     If Command2.Caption = "Active" Then
     
@@ -579,16 +879,36 @@ Private Sub Command2_Click()
             MsgBox "Invalid path to save data recorded."
             Exit Sub
         End If
-    
+        
+        TotalChannelChkdNo = 0
+        CurrentChannelIndex = 1
+        ChannelTimeInterval = Val(tbChannelItv.Text) * 1000
+        ChannelTimePassed = ChannelTimeInterval
+        TotalTimeInterval = Val(ItvTime.Text) * 1000
+        TotalTimePassed = Timer2.Interval
+        
+        For i = 0 To 31
+            If Check1(i).Value = 1 Then
+                TotalChannelChkdNo = TotalChannelChkdNo + 1
+            End If
+        Next i
+        
+        If TotalChannelChkdNo = 0 Then
+            MsgBox "Pls choose a channel to detect!"
+            Exit Sub
+        End If
+        
+        If (TotalChannelChkdNo * ChannelTimeInterval) > TotalTimeInterval Then
+            MsgBox "Channel intervals of all channels together should be less than Interval(Total)!"
+            Exit Sub
+        End If
+        
         wSelectBoard = Val(eSelectBoard.Text)
         If wSelectBoard > Val(eTotalBoards.Text) - 1 _
         Or wSelectBoard < 0 Then
             MsgBox "Invalid board number, Pls retry!!"
             Exit Sub
         End If
-        
-         
-        
         'Get board's Configuration Space
         PISO813X1.ActiveBoard = Val(eSelectBoard.Text)
 
@@ -597,15 +917,10 @@ Private Sub Command2_Click()
         '************************************************************
         
         wCfgCode = InRange.ListIndex
-        wADChNo = Val(cbADChNo.Text)
-        PISO813X1.SetChannelGain wADChNo, wCfgCode
-        iColIndex = wADChNo * 7
         
         Command2.Caption = "Stop"
         Command1.Enabled = False
         
-        TimeInterval = Val(ItvTime.Text) * 1000
-        TimePassed = 1000
         bProcessing = False
         Timer1.Enabled = True
         Timer2.Enabled = True
@@ -639,17 +954,16 @@ Private Sub Form_Load()
     cbBiUni.ListIndex = 1
     cbJmp20v.ListIndex = 1
     
-    cbADChNo.ListIndex = 0
-    wADChNo = 0
     YS(0) = 5: YS(1) = -5
     wCfgCode = InRange.ListIndex
-    wADChNo = Val(cbADChNo.Text)
     
     SetInputRange
     InRange_Click
     
-    TimeInterval = 180000
-    TimePassed = 1000 '1800 * 1000
+    TotalTimeInterval = 180000
+    TotalTimePassed = 1000 '1800 * 1000
+    ChannelTimeInterval = 10000 '10 * 1000
+    ChannelTimePassed = 1000 '1000
 End Sub
 
 Private Sub InitXls()
@@ -675,7 +989,7 @@ Private Sub FinitXls()
     Set xlsApp = Nothing
 End Sub
 
-Private Sub RecordIntoXls(fVal As Single)
+Private Sub RecordIntoXls(fVal As Single, iCNo As Integer)
     Dim rowIndex As Integer
 
     InitXls
@@ -686,17 +1000,31 @@ Private Sub RecordIntoXls(fVal As Single)
     Loop
     
     If rowIndex = 1 Then
-        xlsSheet.Cells(1, iColIndex + 1) = "Channel: " & wADChNo
+        xlsSheet.Cells(1, iColIndex + 1) = "Channel: " & iCNo
         rowIndex = 2
     End If
     
-    'MsgBox "Row: " + CStr(rowIndex) + "fVal: " + Format(fVal, "###,###.000")
     xlsSheet.Cells(rowIndex, iColIndex + 1) = Format(Now, "yyyy-mm-dd hh:mm:ss")
     xlsSheet.Cells(rowIndex, iColIndex + 2) = Format(fVal, "###,###.000")
     
     FinitXls
 End Sub
 
+Private Sub RecordChannel(ByVal ChannelNo As Integer)
+    Dim fVal As Single
+    
+    PISO813X1.SetChannelGain ChannelNo, wCfgCode
+    iColIndex = ChannelNo * 7
+    
+    fVal = PISO813X1.AnalogIn(wJmp20v, wBiUni)
+'    fVal = 12.56
+    
+    If Dir(dataFile.Text) <> "" Then
+        RecordIntoXls fVal, ChannelNo
+    Else
+        MsgBox "File: " + dataFile.Text + " does not exist!"
+    End If
+End Sub
 
 Private Sub Timer1_Timer()
     Dim i, iRtn As Integer
