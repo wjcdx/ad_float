@@ -812,6 +812,15 @@ Private Sub Timer2_Timer()
         bProcessing = True
     End If
     
+        If TotalTimePassed < TotalTimeInterval Then
+        TotalTimePassed = TotalTimePassed + Timer2.Interval
+    Else
+        TotalTimePassed = Timer2.Interval
+        CurrentChannelIndex = 1
+        ChannelTimePassed = ChannelTimeInterval
+    End If
+    
+    
     If CurrentChannelIndex <= TotalChannelChkdNo Then
         If ChannelTimePassed < ChannelTimeInterval Then
             ChannelTimePassed = ChannelTimePassed + Timer2.Interval
@@ -831,14 +840,6 @@ Private Sub Timer2_Timer()
             RecordChannel i
             CurrentChannelIndex = CurrentChannelIndex + 1
         End If
-    End If
-    
-    If TotalTimePassed < TotalTimeInterval Then
-        TotalTimePassed = TotalTimePassed + Timer2.Interval
-    Else
-        TotalTimePassed = Timer2.Interval
-        CurrentChannelIndex = 1
-        ChannelTimePassed = ChannelTimeInterval
     End If
     
     bProcessing = False
@@ -881,13 +882,12 @@ Private Sub Command2_Click()
         End If
         
         TotalChannelChkdNo = 0
-        CurrentChannelIndex = 1
-        ChannelTimeInterval = Val(tbChannelItv.Text) * 1000
-        ChannelTimePassed = ChannelTimeInterval
-        TotalTimeInterval = Val(ItvTime.Text) * 1000
-        TotalTimePassed = Timer2.Interval
+        ChannelTimeInterval = Val(tbChannelItv.Text) * Timer2.Interval
+        TotalTimeInterval = Val(ItvTime.Text) * Timer2.Interval
+        TotalTimePassed = TotalTimeInterval
         
         For i = 0 To 31
+            Check1(i).Enabled = False
             If Check1(i).Value = 1 Then
                 TotalChannelChkdNo = TotalChannelChkdNo + 1
             End If
@@ -925,6 +925,10 @@ Private Sub Command2_Click()
         Timer1.Enabled = True
         Timer2.Enabled = True
     Else
+        For i = 0 To 31
+            Check1(i).Enabled = True
+        Next i
+    
         Timer1.Enabled = False
         Timer2.Enabled = False
         Command2.Caption = "Active"
