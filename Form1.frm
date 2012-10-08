@@ -1018,7 +1018,7 @@ Private Sub RecordChannel(ByVal ChannelNo As Integer)
     Dim fVal As Single
     
     PISO813X1.SetChannelGain ChannelNo, wCfgCode
-    iColIndex = ChannelNo * 7
+    iColIndex = ChannelNo * 2
     
     fVal = PISO813X1.AnalogIn(wJmp20v, wBiUni)
 '    fVal = 12.56
